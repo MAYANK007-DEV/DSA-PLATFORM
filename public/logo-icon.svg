@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iconLeft" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#ff2d75"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+
+    <linearGradient id="iconRight" x1="50%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ff2d75"/>
+    </linearGradient>
+
+    <linearGradient id="iconCode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c0f0"/>
+      <stop offset="50%" stop-color="#b5179e"/>
+      <stop offset="100%" stop-color="#ff2d75"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark charcoal rounded background -->
+  <rect width="400" height="400" rx="48" fill="#090b10"/>
+
+  <g transform="translate(0, 5)">
+    <!-- Outer Hexagon faceted ribbon -->
+    <!-- Top-left segment -->
+    <path d="M 200 40 L 325 110 L 325 170 L 200 100 L 115 150 L 75 125 Z" 
+          fill="url(#iconLeft)" opacity="0.95" />
+    
+    <!-- Top-right segment -->
+    <path d="M 200 40 L 325 110 L 285 135 L 200 85 L 115 135 L 75 110 Z" 
+          fill="url(#iconRight)" opacity="0.95" />
+
+    <!-- Bottom-left faceted ribbon -->
+    <path d="M 75 125 L 115 150 L 115 240 L 200 290 L 200 345 L 75 270 Z" 
+          fill="url(#iconLeft)" />
+
+    <!-- Bottom-right faceted ribbon -->
+    <path d="M 325 125 L 325 270 L 200 345 L 200 290 L 285 240 L 285 150 Z" 
+          fill="url(#iconRight)" />
+
+    <!-- The inner code glyphs: < / > -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <!-- < -->
+      <path d="M 160 155 L 100 200 L 160 245" 
+            stroke="url(#iconCode)" stroke-width="26" fill="none" />
+      
+      <!-- / (slash) -->
+      <path d="M 225 130 L 175 270" 
+            stroke="#ff2d75" stroke-width="26" fill="none" />
+      
+      <!-- > -->
+      <path d="M 240 155 L 300 200 L 240 245" 
+            stroke="#ff2d75" stroke-width="26" fill="none" />
+    </g>
+  </g>
+</svg>

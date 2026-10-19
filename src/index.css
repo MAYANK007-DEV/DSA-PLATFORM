@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #111119;
+    color: #ebf1f5;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Cyber-industrial Neon Glow Utilities & Animations */
+.bg-cyber-dark {
+  background-color: #111119;
+}
+
+.bg-cyber-card {
+  background-color: #161622;
+}
+
+.border-cyber {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.border-cyber-glow {
+  border-color: rgba(255, 46, 147, 0.3);
+}
+
+.glow-gradient {
+  background: linear-gradient(135deg, #ff2e93 0%, #6a00f4 100%);
+}
+
+.glow-gradient-hover:hover {
+  background: linear-gradient(135deg, #ff43a0дим 0%, #7c12ff 100%);
+  box-shadow: 0 0 20px rgba(255, 46, 147, 0.4);
+}
+
+.cyber-glow-box {
+  box-shadow: 0 0 25px rgba(106, 0, 244, 0.15);
+}
+
+.cyber-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cyber-card-hover:hover {
+  transform: translateY(-2px) scale(1.01);
+  border-color: rgba(0, 229, 255, 0.35);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.12), inset 0 0 15px rgba(106, 0, 244, 0.1);
+}
+
+/* Shimmer animation for progress */
+@keyframes cyber-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-cyber-shimmer {
+  background: linear-gradient(90deg, #ff2e93 0%, #00e5ff 50%, #6a00f4 100%);
+  background-size: 200% 100%;
+  animation: cyber-shimmer 3s linear infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111119;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252538;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b54;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

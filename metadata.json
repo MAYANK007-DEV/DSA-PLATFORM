@@ -1,0 +1,6 @@
+{
+  "name": "Placement DSA & SQL Tracker",
+  "description": "Production-grade coding sheet and placement preparation tracker for DSA patterns, company tracks (Google, Microsoft, JPMorgan), LeetCode Top 75, SQL 50, and Data Analyst SQL 100.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
